@@ -1,0 +1,44 @@
+<script>
+(function () {
+  // Create a script element for the Web SDK
+  var webSdkScript = document.createElement("script");
+
+  // Fetch the latest version of the Web SDK from the CDN
+  webSdkScript.src =
+    "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
+
+  // Define the onload event handler for the Web SDK script
+  webSdkScript.onload = () => {
+    // Initialize the Faro Web SDK with the given configuration
+    window.GrafanaFaroWebSdk.initializeFaro({
+      url: "https://faro-collector-prod-eu-north-0.grafana.net/collect/b3d0627a9f00425ba7b7a75820e28f61",
+      app: {
+        name: "HelpTech",
+        version: "1.0.0",
+        environment: "production",
+      },
+    });
+
+    // Create a script element for the Web Tracing package
+    var webTracingScript = document.createElement("script");
+
+    // Fetch the latest version of the Web Tracing package from the CDN
+    webTracingScript.src =
+      "https://unpkg.com/@grafana/faro-web-tracing@^1.4.0/dist/bundle/faro-web-tracing.iife.js";
+
+    // Define the onload event handler for the Web Tracing script
+    webTracingScript.onload = () => {
+      // Add the Web Tracing instrumentation to the already loaded and configured Web SDK
+      window.GrafanaFaroWebSdk.faro.instrumentations.add(
+        new window.GrafanaFaroWebTracing.TracingInstrumentation()
+      );
+    };
+
+    // Append the Web Tracing script tag to the HTML page
+    document.head.appendChild(webTracingScript);
+  };
+
+  // Append the Web SDK script tag to the HTML page
+  document.head.appendChild(webSdkScript);
+})();
+</script>
