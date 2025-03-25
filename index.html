@@ -1,88 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to my GitHub Pages site. This is a sample page.">
   <meta name="keywords" content="GitHub Pages, sample site">
   <meta name="author" content="spykeydp">
-  <title>My GitHub Pages Site</title>
-  Hi there,
-<div class="ad-container">
-  <p>I went from zero to beautiful graphs, insightful logs, and valuable alerts in minutes using Grafana Cloud. You can too by signing up for a free account using my link: <a href="https://grafana.com/auth/sign-up?refCode=gr8KQUezbjexGJ6" target="_blank">https://grafana.com/auth/sign-up?refCode=gr8KQUezbjexGJ6</a></p>
-  <p>Plus, you’ll get free forever access to:</p>
-  <ul>
-    <li>10k series for Prometheus or Graphite metrics</li>
-    <li>50 GB of logs</li>
-    <li>50 GB of traces</li>
-    <li>14-day retention</li>
-    <li>Access for up to 3 team members</li>
-  </ul>
-</div>
- <style>
-.ad-container {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 20px 0;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
+  <title>🍓</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
 
-.ad-container a {
-  color: #007bff;
-  text-decoration: none;
-}
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
 
-.ad-container a:hover {
-  text-decoration: underline;
-}
-</style>
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
 
-  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-  
+    .ad-container {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ad-container a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .ad-container a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>spykey github site</h1>
+  </header>
+
+  <div class="container">
+    <p>Hi there,</p>
+    <div class="ad-container">
+      <p>I went from zero to beautiful graphs, insightful logs, and valuable alerts in minutes using Grafana Cloud. You can too by signing up for a free account using my link: <a href="https://grafana.com">Grafana</a></p>
+      <p>Plus, you’ll get free forever access to:</p>
+      <ul>
+        <li>10k series for Prometheus or Graphite metrics</li>
+        <li>50 GB of logs</li>
+        <li>50 GB of traces</li>
+        <li>14-day retention</li>
+        <li>Access for up to 3 team members</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 spykeydp. All rights reserved.</p>
+  </footer>
+
   <script>
-(function () {
-  // Create a script element for the Web SDK
-  var webSdkScript = document.createElement("script");
+    (function () {
+      // Create a script element for the Web SDK
+      var webSdkScript = document.createElement("script");
 
-  // Fetch the latest version of the Web SDK from the CDN
-  webSdkScript.src =
-    "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
+      // Fetch the latest version of the Web SDK from the CDN
+      webSdkScript.src =
+        "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
 
-  // Define the onload event handler for the Web SDK script
-  webSdkScript.onload = () => {
-    // Initialize the Faro Web SDK with the given configuration
-    window.GrafanaFaroWebSdk.initializeFaro({
-      url: "https://faro-collector-prod-eu-north-0.grafana.net/collect/b3d0627a9f00425ba7b7a75820e28f61",
-      app: {
-        name: "HelpTech",
-        version: "1.0.0",
-        environment: "production",
-      },
-    });
+      // Define the onload event handler for the Web SDK script
+      webSdkScript.onload = () => {
+        // Initialize the Faro Web SDK with the given configuration
+        window.GrafanaFaroWebSdk.initializeFaro({
+          url: "https://faro-collector-prod-eu-north-0.grafana.net/collect/b3d0627a9f00425ba7b7a75820e28f61",
+          app: {
+            name: "HelpTech",
+            version: "1.0.0",
+            environment: "production",
+          },
+        });
 
-    // Create a script element for the Web Tracing package
-    var webTracingScript = document.createElement("script");
+        // Create a script element for the Web Tracing package
+        var webTracingScript = document.createElement("script");
 
-    // Fetch the latest version of the Web Tracing package from the CDN
-    webTracingScript.src =
-      "https://unpkg.com/@grafana/faro-web-tracing@^1.4.0/dist/bundle/faro-web-tracing.iife.js";
+        // Fetch the latest version of the Web Tracing package from the CDN
+        webTracingScript.src =
+          "https://unpkg.com/@grafana/faro-web-tracing@^1.4.0/dist/bundle/faro-web-tracing.iife.js";
 
-    // Define the onload event handler for the Web Tracing script
-    webTracingScript.onload = () => {
-      // Add the Web Tracing instrumentation to the already loaded and configured Web SDK
-      window.GrafanaFaroWebSdk.faro.instrumentations.add(
-        new window.GrafanaFaroWebTracing.TracingInstrumentation()
-      );
-    };
+        // Define the onload event handler for the Web Tracing script
+        webTracingScript.onload = () => {
+          // Add the Web Tracing instrumentation to the already loaded and configured Web SDK
+          window.GrafanaFaroWebSdk.faro.instrumentations.add(
+            new window.GrafanaFaroWebTracing.TracingInstrumentation()
+          );
+        };
 
-    // Append the Web Tracing script tag to the HTML page
-    document.head.appendChild(webTracingScript);
-  };
+        // Append the Web Tracing script tag to the HTML page
+        document.head.appendChild(webTracingScript);
+      };
 
-  // Append the Web SDK script tag to the HTML page
-  document.head.appendChild(webSdkScript);
-})();
-</script>
+      // Append the Web SDK script tag to the HTML page
+      document.head.appendChild(webSdkScript);
+    })();
+  </script>
+</body>
+
 </html>
