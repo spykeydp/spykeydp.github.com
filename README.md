@@ -1,4 +1,3 @@
-# spykeydp.github.com
 # Spykeydp GitHub Pages Project
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/spykeydp/spykeydp.github.com)
