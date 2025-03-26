@@ -10,8 +10,6 @@
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
@@ -21,21 +19,5 @@
 
 ## About the Project
 
-This is the GitHub Pages project for spykeydp. The project aims to create a personal website using HTML and JavaScript.
+This is the GitHub Pages project for spykeydp. The project aims to create a personal website using HTML and Javascript. The goal is to provide access to information and tools that facilitate research and analysis of this significant growth and change of software development and artificial intelligence. Spykey for life 
 
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-Make sure you have the following installed on your local machine:
-
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org)
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/spykeydp/spykeydp.github.com.git
